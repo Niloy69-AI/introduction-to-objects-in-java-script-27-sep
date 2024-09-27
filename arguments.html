@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Findingthe largest number with hepl of Argument Objects</p>
+    <p id="result"></p>
+
+    <script>
+      function findMax() {
+        var max = 0;
+
+        for (i = 0; i < arguments.length; i++) {
+          if (arguments[i] > max) {
+            max = arguments[i];
+          }
+        }
+        return max;
+      }
+      document.getElementById("result").innerHTML = findMax(8, 4, 55, 6, 2);
+    </script>
+  </body>
+</html>
